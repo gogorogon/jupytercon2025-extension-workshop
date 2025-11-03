@@ -1,6 +1,9 @@
 import { Widget } from '@lumino/widgets';
-import { MainAreaWidget } from '@jupyterlab/apputils';
-import { imageIcon } from '@jupyterlab/ui-components';
+import {
+  MainAreaWidget,
+  ToolbarButton
+} from '@jupyterlab/apputils';
+import { imageIcon, refreshIcon } from '@jupyterlab/ui-components';
 
 import { requestAPI } from './request';
 
@@ -32,7 +35,7 @@ class ImageCaptionWidget extends Widget {
     void this.loadImage();
   }
 
-  private async loadImage(): Promise<void> {
+  async loadImage(): Promise<void> {
     try {
       const data = await requestAPI<RandomImageResponse>('random-image-caption');
       this.img.src = `data:image/jpeg;base64,${data.b64_bytes}`;
@@ -53,5 +56,14 @@ export class ImageCaptionMainAreaWidget extends MainAreaWidget<ImageCaptionWidge
     this.title.label = 'Random image with caption';
     this.title.caption = this.title.label;
     this.title.icon = imageIcon;
+
+    const refreshButton = new ToolbarButton({
+      icon: refreshIcon,
+      tooltip: 'Refresh image',
+      onClick: () => {
+        void widget.loadImage();
+      }
+    });
+    this.toolbar.addItem('refresh', refreshButton);
   }
 }
