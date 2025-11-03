@@ -1,19 +1,47 @@
 import { Widget } from '@lumino/widgets';
 import { MainAreaWidget } from '@jupyterlab/apputils';
-import {
-  imageIcon,
-} from '@jupyterlab/ui-components';
+import { imageIcon } from '@jupyterlab/ui-components';
+
+import { requestAPI } from './request';
+
+interface RandomImageResponse {
+  b64_bytes: string;
+  caption: string;
+}
 
 class ImageCaptionWidget extends Widget {
-  // Initialization
+  private readonly img: HTMLImageElement;
+  private readonly caption: HTMLParagraphElement;
+
   constructor() {
     super();
 
-    // Create and append an HTML <p> (paragraph) tag to our widget's node in
-    // the HTML document
-    const hello = document.createElement('p');
-    hello.innerHTML = "Hello, world!";
-    this.node.appendChild(hello);
+    this.addClass('jp-jupytercon2025-extension-workshop-widget');
+
+    const center = document.createElement('center');
+    this.node.appendChild(center);
+
+    this.img = document.createElement('img');
+    this.img.alt = 'Random cat';
+    this.img.style.maxWidth = '100%';
+    center.appendChild(this.img);
+
+    this.caption = document.createElement('p');
+    center.appendChild(this.caption);
+
+    void this.loadImage();
+  }
+
+  private async loadImage(): Promise<void> {
+    try {
+      const data = await requestAPI<RandomImageResponse>('random-image-caption');
+      this.img.src = `data:image/jpeg;base64,${data.b64_bytes}`;
+      this.caption.textContent = data.caption;
+    } catch (error) {
+      const detail = error instanceof Error ? error.message : 'Unknown error';
+      console.error(`Error fetching image data: ${detail}`);
+      this.caption.textContent = 'Failed to load image.';
+    }
   }
 }
 
