@@ -59,7 +59,7 @@ const plugin: JupyterFrontEndPlugin<void> = {
 
     app.commands.addCommand(COMMAND_ID, {
       icon: imageIcon,
-      label: 'View a random image & caption',
+      label: 'Image Editor with Filters',
       execute: (args?: CommandArgs) => {
         const existingId = args?.id;
         let widget = existingId

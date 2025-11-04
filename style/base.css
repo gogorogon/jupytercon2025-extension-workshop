@@ -3,3 +3,150 @@
 
     https://jupyterlab.readthedocs.io/en/stable/developer/css.html
 */
+
+.jp-jupytercon2025-extension-workshop-widget {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: auto;
+}
+
+.jp-image-editor-container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  gap: 16px;
+  padding: 16px;
+}
+
+.jp-image-controls-panel {
+  min-width: 250px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: var(--jp-layout-color1);
+  border: 1px solid var(--jp-border-color1);
+  border-radius: 4px;
+  overflow-y: auto;
+}
+
+.jp-image-controls-section {
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--jp-border-color2);
+}
+
+.jp-image-controls-section:last-of-type {
+  border-bottom: none;
+}
+
+.jp-image-controls-section h3 {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--jp-ui-font-color1);
+}
+
+.jp-image-filter-button {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px 16px;
+  background-color: var(--jp-brand-color1);
+  color: var(--jp-ui-inverse-font-color1);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.jp-image-filter-button:hover {
+  background-color: var(--jp-brand-color0);
+}
+
+.jp-image-filter-button:active {
+  background-color: var(--jp-brand-color2);
+}
+
+.jp-image-controls-section label {
+  display: block;
+  margin: 12px 0 4px 0;
+  font-size: 13px;
+  color: var(--jp-ui-font-color1);
+}
+
+.jp-image-slider {
+  width: 100%;
+  margin: 4px 0;
+  cursor: pointer;
+}
+
+.jp-image-slider-value {
+  display: inline-block;
+  margin-left: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--jp-ui-font-color2);
+}
+
+.jp-image-reset-button {
+  width: 100%;
+  margin-top: 16px;
+  padding: 10px 12px;
+  background-color: var(--jp-warn-color1);
+  color: var(--jp-ui-inverse-font-color1);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.jp-image-reset-button:hover {
+  background-color: var(--jp-warn-color0);
+}
+
+.jp-image-display-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 16px;
+  background-color: var(--jp-layout-color2);
+  border-radius: 4px;
+  overflow: auto;
+}
+
+.jp-image-display {
+  max-width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.jp-image-caption {
+  margin: 16px 0 8px 0;
+  font-size: 14px;
+  font-style: italic;
+  color: var(--jp-ui-font-color1);
+  text-align: center;
+  max-width: 600px;
+}
+
+.jp-image-status {
+  margin: 8px 0;
+  padding: 8px 16px;
+  font-size: 12px;
+  color: var(--jp-success-color1);
+  background-color: var(--jp-layout-color1);
+  border-radius: 4px;
+  text-align: center;
+}
+
+.jp-image-status-error {
+  color: var(--jp-error-color1);
+  background-color: var(--jp-error-color3);
+}
