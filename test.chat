@@ -1,0 +1,289 @@
+{
+  "messages": [
+    {
+      "id": "c4c84842-937b-4aa0-a281-15e492657a59",
+      "type": "msg",
+      "raw_time": false,
+      "body": "/refresh-personas ",
+      "time": 1762454954.5353744,
+      "sender": "e8a9aae258fb4ec09303e316b9f938d3"
+    },
+    {
+      "sender": "hidden::jupyter_ai_system",
+      "raw_time": false,
+      "body": "Refreshed all AI personas in this chat.",
+      "id": "5265c181-fa1a-4c22-8695-c057205d4a7c",
+      "mentions": [],
+      "type": "msg",
+      "time": 1762454954.5435798
+    },
+    {
+      "id": "827f6b1a-e79a-4203-b0dd-0c7454629e51",
+      "body": "",
+      "deleted": true,
+      "type": "msg",
+      "time": 1762454967.6834905,
+      "sender": "e8a9aae258fb4ec09303e316b9f938d3",
+      "raw_time": false
+    },
+    {
+      "mentions": [
+        "jupyter-ai-personas::jupyter_ai_jupyternaut::JupyternautPersona"
+      ],
+      "id": "95bd3425-9c09-49bd-bcb5-7ae41e05d378",
+      "body": "@Jupyternaut test",
+      "time": 1762454975.890146,
+      "raw_time": false,
+      "type": "msg",
+      "sender": "e8a9aae258fb4ec09303e316b9f938d3"
+    },
+    {
+      "raw_time": false,
+      "type": "msg",
+      "id": "89a28dcd-2507-4a5f-8f16-f9228b0fb9c0",
+      "time": 1762454975.8933744,
+      "sender": "jupyter-ai-personas::jupyter_ai_jupyternaut::JupyternautPersona",
+      "body": "No chat model is configured.\n\nYou must set one first in the Jupyter AI settings, found in 'Settings > AI Settings' from the menu bar.",
+      "mentions": []
+    },
+    {
+      "id": "abaf40a3-3e22-41da-af8b-4ff65283b6aa",
+      "raw_time": false,
+      "type": "msg",
+      "sender": "e8a9aae258fb4ec09303e316b9f938d3",
+      "body": "/refresh-personas ",
+      "time": 1762457410.0966046
+    },
+    {
+      "id": "69a13e38-ed2d-48f8-a473-54a99cd0310b",
+      "mentions": [],
+      "body": "Loading an AI persona raised an exception:\n\n```python\nTraceback (most recent call last):\n  File \"/home/kunieda/micromamba/envs/jupytercon2025/lib/python3.14/site-packages/jupyter_ai_persona_manager/persona_manager.py\", line 597, in load_from_dir\n    spec.loader.exec_module(module)\n    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^\n  File \"<frozen importlib._bootstrap_external>\", line 758, in exec_module\n  File \"<frozen importlib._bootstrap_external>\", line 896, in get_code\n  File \"<frozen importlib._bootstrap_external>\", line 826, in source_to_code\n  File \"<frozen importlib._bootstrap>\", line 491, in _call_with_frames_removed\n  File \"/home/kunieda/Projects/jupytercon2025-extension-workshop/.jupyter/personas/ollama_persona.py\", line 29\n    self.send_message(response['message']['content])\n                                          ^\nSyntaxError: unterminated string literal (detected at line 29)\n```",
+      "type": "msg",
+      "raw_time": false,
+      "time": 1762457410.1034386,
+      "sender": "hidden::jupyter_ai_system"
+    },
+    {
+      "id": "c853cba3-93c0-4c00-a44c-a36e6b2a26a2",
+      "time": 1762457410.1062021,
+      "body": "Refreshed all AI personas in this chat.",
+      "type": "msg",
+      "mentions": [],
+      "sender": "hidden::jupyter_ai_system",
+      "raw_time": false
+    },
+    {
+      "body": "/refresh-personas ",
+      "id": "fe97cae0-593c-4edd-ade7-8046e6dde92a",
+      "sender": "e8a9aae258fb4ec09303e316b9f938d3",
+      "type": "msg",
+      "time": 1762457452.740195,
+      "raw_time": false
+    },
+    {
+      "type": "msg",
+      "raw_time": false,
+      "body": "Loading an AI persona raised an exception:\n\n```python\nTraceback (most recent call last):\n  File \"/home/kunieda/micromamba/envs/jupytercon2025/lib/python3.14/site-packages/jupyter_ai_persona_manager/persona_manager.py\", line 597, in load_from_dir\n    spec.loader.exec_module(module)\n    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^\n  File \"<frozen importlib._bootstrap_external>\", line 762, in exec_module\n  File \"<frozen importlib._bootstrap>\", line 491, in _call_with_frames_removed\n  File \"/home/kunieda/Projects/jupytercon2025-extension-workshop/.jupyter/personas/ollama_persona.py\", line 3, in <module>\n    from olllam import chat\nModuleNotFoundError: No module named 'olllam'\n```",
+      "mentions": [],
+      "sender": "hidden::jupyter_ai_system",
+      "id": "a3efc117-4df3-4814-8274-019d229820b4",
+      "time": 1762457452.7465682
+    },
+    {
+      "mentions": [],
+      "time": 1762457452.7486224,
+      "body": "Refreshed all AI personas in this chat.",
+      "sender": "hidden::jupyter_ai_system",
+      "raw_time": false,
+      "id": "e21e4076-12aa-4d21-8244-7a75ab0a508d",
+      "type": "msg"
+    },
+    {
+      "mentions": [],
+      "raw_time": false,
+      "id": "cb56e9ad-d9dd-45bf-b522-30d7d0c56af4",
+      "sender": "hidden::jupyter_ai_system",
+      "type": "msg",
+      "body": "Loading an AI persona raised an exception:\n\n```python\nTraceback (most recent call last):\n  File \"/home/kunieda/micromamba/envs/jupytercon2025/lib/python3.14/site-packages/jupyter_ai_persona_manager/persona_manager.py\", line 597, in load_from_dir\n    spec.loader.exec_module(module)\n    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^\n  File \"<frozen importlib._bootstrap_external>\", line 762, in exec_module\n  File \"<frozen importlib._bootstrap>\", line 491, in _call_with_frames_removed\n  File \"/home/kunieda/Projects/jupytercon2025-extension-workshop/.jupyter/personas/ollama_persona.py\", line 3, in <module>\n    from olllam import chat\nModuleNotFoundError: No module named 'olllam'\n```",
+      "time": 1762457532.6052434
+    },
+    {
+      "body": "/refresh-personas ",
+      "raw_time": false,
+      "type": "msg",
+      "time": 1762457544.9979067,
+      "id": "a11252a1-bf50-4ee0-b42b-b4d8a969770d",
+      "sender": "e8a9aae258fb4ec09303e316b9f938d3"
+    },
+    {
+      "type": "msg",
+      "sender": "hidden::jupyter_ai_system",
+      "body": "Loading an AI persona raised an exception:\n\n```python\nTraceback (most recent call last):\n  File \"/home/kunieda/micromamba/envs/jupytercon2025/lib/python3.14/site-packages/jupyter_ai_persona_manager/persona_manager.py\", line 597, in load_from_dir\n    spec.loader.exec_module(module)\n    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^\n  File \"<frozen importlib._bootstrap_external>\", line 762, in exec_module\n  File \"<frozen importlib._bootstrap>\", line 491, in _call_with_frames_removed\n  File \"/home/kunieda/Projects/jupytercon2025-extension-workshop/.jupyter/personas/ollama_persona.py\", line 3, in <module>\n    from olllam import chat\nModuleNotFoundError: No module named 'olllam'\n```",
+      "mentions": [],
+      "id": "701ac065-5c1d-4140-a9ae-8062d97b21aa",
+      "raw_time": false,
+      "time": 1762457545.0134687
+    },
+    {
+      "type": "msg",
+      "time": 1762457545.017398,
+      "sender": "hidden::jupyter_ai_system",
+      "body": "Refreshed all AI personas in this chat.",
+      "raw_time": false,
+      "mentions": [],
+      "id": "6b610b34-7d43-4140-8d32-5f85de6859f3"
+    },
+    {
+      "id": "4297e8c8-95a0-4ce1-8ca1-04444572e332",
+      "time": 1762457563.275651,
+      "raw_time": false,
+      "type": "msg",
+      "body": "/refresh-personas ",
+      "sender": "e8a9aae258fb4ec09303e316b9f938d3"
+    },
+    {
+      "body": "Refreshed all AI personas in this chat.",
+      "mentions": [],
+      "time": 1762457563.3655446,
+      "type": "msg",
+      "sender": "hidden::jupyter_ai_system",
+      "id": "d16ffc79-838a-4591-a87e-0532cd1c4fe3",
+      "raw_time": false
+    },
+    {
+      "type": "msg",
+      "raw_time": false,
+      "sender": "e8a9aae258fb4ec09303e316b9f938d3",
+      "id": "bf963ab6-3614-43a1-82d1-bd6d3003fc28",
+      "body": "/refresh-personas ",
+      "time": 1762457581.8615558
+    },
+    {
+      "id": "04ce958f-0ec8-4172-af66-ce95aa779b9e",
+      "body": "Refreshed all AI personas in this chat.",
+      "type": "msg",
+      "sender": "hidden::jupyter_ai_system",
+      "time": 1762457581.8770394,
+      "raw_time": false,
+      "mentions": []
+    },
+    {
+      "sender": "e8a9aae258fb4ec09303e316b9f938d3",
+      "id": "b09c380c-255f-49c5-a923-6f813b032d97",
+      "mentions": [
+        "jupyter-ai-personas::ollama_persona::OllamaModel"
+      ],
+      "raw_time": false,
+      "body": "@ollama \u4eca\u65e5\u306e\u30b5\u30f3\u30c7\u30a3\u30a8\u30b4\u306e\u5929\u6c17",
+      "type": "msg",
+      "time": 1762457596.813362
+    },
+    {
+      "body": "/refresh-personas ",
+      "type": "msg",
+      "sender": "e8a9aae258fb4ec09303e316b9f938d3",
+      "id": "b2e1b930-bf31-4d1b-9a47-74e676e3530f",
+      "raw_time": false,
+      "time": 1762457663.1761062
+    },
+    {
+      "body": "Refreshed all AI personas in this chat.",
+      "mentions": [],
+      "id": "1cef7ea5-03c0-441c-9071-cb3efd7cfe26",
+      "raw_time": false,
+      "type": "msg",
+      "time": 1762457663.1920915,
+      "sender": "hidden::jupyter_ai_system"
+    },
+    {
+      "mentions": [
+        "jupyter-ai-personas::ollama_persona::MyLocalPersona"
+      ],
+      "raw_time": false,
+      "body": "@Ollama \u4eca\u65e5\u306e\u5929\u6c17\u306f",
+      "type": "msg",
+      "id": "5ef2526e-1cb8-4815-96a6-9414823b84ef",
+      "sender": "e8a9aae258fb4ec09303e316b9f938d3",
+      "time": 1762457675.9722807
+    },
+    {
+      "body": "\u4eca\u65e5\u306e\u5929\u6c17\u306f\u3001\u5834\u6240\u306b\u3088\u3063\u3066\u7570\u306a\u308a\u307e\u3059\u3002\n\n\u3069\u3053\u3067\u73fe\u5728\u306e\u65e5\u3068\u5929\u6c17\u3092\u78ba\u8a8d\u3057\u305f\u3044\u3067\u3059\u304b\uff1f\n\n*   **\u5834\u6240\u3092\u6559\u3048\u3066\u304f\u3060\u3055\u3044\u3002** \uff08\u4f8b\uff1a\u6771\u4eac\u3001\u5927\u962a\u3001\u30cb\u30e5\u30fc\u30e8\u30fc\u30af\u306a\u3069\uff09\n*   **\u3082\u3057\u5177\u4f53\u7684\u306a\u5834\u6240\u304c\u5206\u304b\u3089\u306a\u3044\u5834\u5408\u306f\u3001\u90fd\u5e02\u540d\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044\u3002** \uff08\u4f8b\uff1a\u6771\u4eac\u3001\u5927\u962a\u3001\u30cb\u30e5\u30fc\u30e8\u30fc\u30af\u306a\u3069\uff09",
+      "id": "915366ce-601d-4f62-af2e-8dd034e8d9b3",
+      "mentions": [],
+      "type": "msg",
+      "raw_time": false,
+      "time": 1762457678.0505865,
+      "sender": "jupyter-ai-personas::ollama_persona::MyLocalPersona"
+    },
+    {
+      "id": "721c6e05-42b2-46cb-8a44-6360ce026bea",
+      "sender": "e8a9aae258fb4ec09303e316b9f938d3",
+      "body": "/refresh-personas ",
+      "type": "msg",
+      "time": 1762457765.3806152,
+      "raw_time": false
+    },
+    {
+      "id": "6d131e54-a403-474a-9366-8bca98708fc7",
+      "sender": "hidden::jupyter_ai_system",
+      "time": 1762457765.4003682,
+      "raw_time": false,
+      "type": "msg",
+      "body": "Refreshed all AI personas in this chat.",
+      "mentions": []
+    }
+  ],
+  "users": {
+    "jupyter-ai-personas::jupyter_ai_jupyternaut::JupyternautPersona": {
+      "bot": true,
+      "initials": null,
+      "username": "jupyter-ai-personas::jupyter_ai_jupyternaut::JupyternautPersona",
+      "display_name": "Jupyternaut",
+      "name": "Jupyternaut",
+      "avatar_url": "/api/ai/avatars/jupyter-ai-personas%3A%3Ajupyter_ai_jupyternaut%3A%3AJupyternautPersona",
+      "color": null
+    },
+    "jupyter-ai-personas::my_persona::MyLocalPersona": {
+      "avatar_url": "/api/ai/avatars/jupyter-ai-personas%3A%3Amy_persona%3A%3AMyLocalPersona",
+      "name": "Local Dev Assistant",
+      "display_name": "Local Dev Assistant",
+      "initials": null,
+      "username": "jupyter-ai-personas::my_persona::MyLocalPersona",
+      "color": null,
+      "bot": true
+    },
+    "e8a9aae258fb4ec09303e316b9f938d3": {
+      "mention_name": "Anonymous-Arche",
+      "bot": false,
+      "name": "Anonymous Arche",
+      "display_name": "Anonymous Arche",
+      "username": "e8a9aae258fb4ec09303e316b9f938d3",
+      "initials": "AA",
+      "avatar_url": null,
+      "color": "var(--jp-collaborator-color4)"
+    },
+    "jupyter-ai-personas::ollama_persona::OllamaModel": {
+      "color": null,
+      "avatar_url": "/api/ai/avatars/jupyter-ai-personas%3A%3Aollama_persona%3A%3AOllamaModel",
+      "username": "jupyter-ai-personas::ollama_persona::OllamaModel",
+      "name": "ollama",
+      "display_name": "ollama",
+      "bot": true,
+      "initials": null,
+      "mention_name": "ollama"
+    },
+    "jupyter-ai-personas::ollama_persona::MyLocalPersona": {
+      "avatar_url": "/api/ai/avatars/jupyter-ai-personas%3A%3Aollama_persona%3A%3AMyLocalPersona",
+      "display_name": "Ollama",
+      "username": "jupyter-ai-personas::ollama_persona::MyLocalPersona",
+      "name": "Ollama",
+      "color": null,
+      "bot": true,
+      "initials": null
+    }
+  },
+  "attachments": {},
+  "metadata": {
+    "id": "22da9e32-8e3a-4479-8918-a41f18f833ac"
+  }
+}
